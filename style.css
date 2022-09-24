@@ -16,8 +16,7 @@ html {
 }
 
 .header {
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/33/Annapurna_peaks%2C_Nepal.jpg);
-    opacity: 60%;
+    background-image: url(https://i.imgur.com/CFOfaEt.jpg);
     background-color: #935349;
     background-position: top;
     min-height: 100px;
@@ -84,15 +83,14 @@ ul.nav-bar li.right-side {
 .header-text {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    /*padding-top: 300px;*/
     top: 30%;
     left: 100%;
     transform: translate(-100%, -50%);
-    // text-shadow: 0 0px 50px black;
     color: rgb(255, 255, 255);
     letter-spacing: 5px;
     width: 100%;
     position: absolute;
+    opacity: 0.8;
 }
 
 h2 {
@@ -127,33 +125,6 @@ h5 {
 
 .white-btn {
     color: white;
-}
-
-@media only screen and (max-width: 600px) {
-    .header-text {
-        top: 50%;
-    }
-    .display-1 {
-        text-align: center;
-        font-size: 10vw;
-    }
-    h2 {
-        font-size: 15vw;
-    }
-    h5 {
-        font-size: 6vw;
-    }
-    .icon-splash {
-        font-size: 10vw;
-    }
-    ul.nav-bar li a {
-        padding-left: 7px;
-        padding-right: 4px;
-        font-size: 12px;
-    }
-  .footer-icons {
-    font-size: 12px;
-  }
 }
 
 .btn-icon {
@@ -302,68 +273,48 @@ footer {
 
 
 
+@media only screen and (max-width: 600px) {
+    .header-text {
+        top: 50%;
+        font-size: 1em;
+        opacity: 1;
+    }
+    .display-1 {
+        text-align: center;
+        font-size: 10vw;
+    }
+    h1 {
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 15vw;
+        text-shadow: 1px 1px 1px black;
+    }
+    h5 {
+        font-size: 6vw;
+        color: white;
+    }
+    .icon-splash {
+        font-size: 10vw;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    ul.nav-bar li {
+        padding-left: 2px;
+        padding-right: 2px;
+        font-size: 10px;
+    }
 
+    ul.nav-bar a:hover:not(.active) {
+        opacity: 1;
+        text-decoration: none;
+        font-weight: normal;
+    }
 
-//// Ken Burns /////
-
-.kenburns-wrap {
-
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    overflow: hidden;
+    ul.nav-bar li.right-side {
+        display: none;
+    }
+  .footer-icons {
+    font-size: 12px;
   }
-  .kenburns-wrap img.kenburns {
-    z-index: 0;
-    position: absolute;
-    top: -999px;
-    bottom: -999px;
-    left: -999px;
-    right: -999px;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    overflow: hidden;
-    margin: auto;
-    -webkit-animation: 115s ppb_kenburns linear infinite alternate;
-            animation: 115s ppb_kenburns linear infinite alternate;
-  }
-  
-  @-webkit-keyframes ppb_kenburns {
-    0% {
-      transform: scale(1.3) translate(-10%, 10%);
-    }
-    25% {
-      transform: scale(1) translate(0, 0);
-    }
-    50% {
-      transform: scale(1.3) translate(10%, 10%);
-    }
-    75% {
-      transform: scale(1) translate(0, 0);
-    }
-    100% {
-      transform: scale(1.3) translate(-10%, 10%);
-    }
-  }
-  
-  @keyframes ppb_kenburns {
-    0% {
-      transform: scale(1.3) translate(-10%, 10%);
-    }
-    25% {
-      transform: scale(1) translate(0, 0);
-    }
-    50% {
-      transform: scale(1.3) translate(10%, 10%);
-    }
-    75% {
-      transform: scale(1) translate(0, 0);
-    }
-    100% {
-      transform: scale(1.3) translate(-10%, 10%);
-    }
-  }
+}
