@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <title>CodePen - Portfolio Project</title>
       <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+      <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+      <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
 
 </head>
 <body>
@@ -14,19 +16,26 @@
         <div class="header">
             <div class="header-text">
                 <h2><b>julio macedo</b></h2>
-                <h5>JUNIOR PROGRAMMER | WEB DEV</h5>
+                <h1>
+                    <span class="typer" id="main" data-words="junior programmer, web developer" data-delay="65" data-deleteDelay="500"></span>
+                    <span class="cursor" data-owner="main"></span>
+                  </h1>
+                  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>  
+                <!-- <h5>JUNIOR PROGRAMMER | WEB DEV</h5> -->
                 <div class="splash-icons">
                     <a href="https://github.com/juliosmacedo" class="fa fa-github fa-3x icon-splash" target='_blank'></a>
                     <a href="https://www.linkedin.com/in/julio-macedo-1b63b12a/" class="fa fa-linkedin fa-3x icon-splash" target='_blank'></a>
                     <a href="https://codepen.io/juliosmacedo/" class="fa fa-codepen fa-3x icon-splash" target='_blank'></a>
                 </div>
-
-
             </div>
+
             <div id="downArrow">
                 <a href="#about" class=" downArrow fa fa-angle-double-down fa-3x"></a>
             </div>
-        </div>
+        </div> 
+        <!-- <div class="kenburns-wrap">
+            <img src="https://images.unsplash.com/photo-1473760737694-97af167fe924?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;s=73140750939806000bae9ccb7858dfd0" class="kenburns">
+          </div> -->
     </a>
     <ul class="nav-bar">
         <li><a href="#home">HOME</a></li>
@@ -51,7 +60,7 @@
                 <h1 class="display-1">about.</h1>
                 <hr class="my-2">
                 <p class="lead">
-                    Newbie na jornada da programação, mas com sede de aprender. Skills em JavaScript, HTML e CSS (Sass).
+                    Newbie na jornada da programação, mas com sede de aprender. Skills em <strong>JavaScript, HTML e CSS.</strong>
                     Escritor de prompts de Stable Diffusion. Interessado em Machine Learning e musica.
                     Apaixonado por novas tecnologias e engordando o portfolio a cada dia.
                     </p>
