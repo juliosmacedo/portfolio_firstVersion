@@ -17,6 +17,7 @@ html {
 
 .header {
     background-image: url(https://i.imgur.com/CFOfaEt.jpg);
+    background-size: cover;
     background-color: #935349;
     background-position: top;
     min-height: 100px;
@@ -39,6 +40,7 @@ html {
     border-width: 1px 0px 1px 0px;
     border-top-color: rgba(66, 66, 66, 0.644);
     position: sticky;
+    z-index: 100;
     opacity: .9;
 }
 
@@ -175,6 +177,10 @@ footer {
     float: left;
     width: 20%;
     padding: 1px;
+}
+
+.col-sm-6 {
+    padding-bottom: 50px;
 }
 
 .valid {
