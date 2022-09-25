@@ -323,4 +323,10 @@ footer {
   .footer-icons {
     font-size: 12px;
   }
+  .col-sm-6 {
+    padding-bottom: 30px; 
+  }
+  .proj-text {
+    margin-bottom: 3px;
+  }
 }
