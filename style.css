@@ -320,13 +320,16 @@ footer {
     ul.nav-bar li.right-side {
         display: none;
     }
-  .footer-icons {
+    .footer-icons {
     font-size: 12px;
-  }
-  .col-sm-6 {
+    }
+    .col-sm-6 {
     padding-bottom: 30px; 
-  }
-  .proj-text {
+    }
+    .proj-text {
     margin-bottom: 3px;
-  }
+    }  
+    .header {
+    background-size: auto;
+    }
 }
